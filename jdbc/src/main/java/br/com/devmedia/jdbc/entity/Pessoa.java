@@ -12,6 +12,15 @@ public class Pessoa {
 
 	private Date nascimento;
 
+	public Pessoa() {
+	}
+
+	public Pessoa(String nome, String profissao, Date nascimento) {
+		this.nome = nome;
+		this.profissao = profissao;
+		this.nascimento = nascimento;
+	}
+
 	public Long getId() {
 		return id;
 	}
@@ -43,7 +52,7 @@ public class Pessoa {
 	public void setNascimento(Date nascimento) {
 		this.nascimento = nascimento;
 	}
-	
+
 	@Override
 	public String toString() {
 		return super.toString();

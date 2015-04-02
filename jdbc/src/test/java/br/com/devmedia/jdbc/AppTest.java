@@ -1,5 +1,8 @@
 package br.com.devmedia.jdbc;
 
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -30,5 +33,17 @@ public class AppTest extends TestCase {
 	 */
 	public void testApp() {
 		assertTrue(true);
+	}
+	
+	
+	public void nameHost(){
+		try {
+			System.out.println(InetAddress.getLocalHost().getHostName());
+			System.out.println(InetAddress.getLocalHost().getHostAddress());
+		} catch (UnknownHostException e) {			
+			e.printStackTrace();
+		}
+		
+		
 	}
 }
