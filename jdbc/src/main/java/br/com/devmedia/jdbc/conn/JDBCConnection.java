@@ -8,10 +8,15 @@ import java.sql.SQLException;
 
 public class JDBCConnection {
 
-	private static final String JDBC_URL = "jdbc:postgresql://localhost:5432/dbspringtemplate";
-	private static final String JDBC_USER = "postgres";
-	private static final String JDBC_PASS = "postgres";
-	private static final String JDBC_DRIVER = "org.postgresql.Driver";
+//	private static final String JDBC_URL = "jdbc:postgresql://localhost:5432/dbspringtemplate";
+//	private static final String JDBC_USER = "postgres";
+//	private static final String JDBC_PASS = "postgres";
+//	private static final String JDBC_DRIVER = "org.postgresql.Driver";
+	
+	private static final String JDBC_URL = "jdbc:mysql://localhost/bdspringtemplate";
+	private static final String JDBC_USER = "root";
+	private static final String JDBC_PASS = "root";
+	private static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
 
 	public static Connection getConnection() {
 
