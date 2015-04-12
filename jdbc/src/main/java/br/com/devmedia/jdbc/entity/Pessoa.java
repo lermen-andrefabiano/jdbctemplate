@@ -15,6 +15,13 @@ public class Pessoa {
 	public Pessoa() {
 	}
 
+	public Pessoa(Long id, String nome, String profissao, Date nascimento) {
+		this.id = id;
+		this.nome = nome;
+		this.profissao = profissao;
+		this.nascimento = nascimento;
+	}
+
 	public Pessoa(String nome, String profissao, Date nascimento) {
 		this.nome = nome;
 		this.profissao = profissao;
